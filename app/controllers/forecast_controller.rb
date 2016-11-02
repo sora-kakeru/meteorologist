@@ -20,7 +20,7 @@ class ForecastController < ApplicationController
 
     address = @lat + "," + @lng
 
-    @url = "https://api.darksky.net/forecast/aa4f9052007acaad5d6137341fa9632e/" + address
+    @url = "https://api.forecast.io/forecast/aa4f9052007acaad5d6137341fa9632e/" + address
 
     @parsed_data = JSON.parse(open(@url).read)
 
